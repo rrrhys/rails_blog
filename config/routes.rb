@@ -1,4 +1,9 @@
 RailsBlog::Application.routes.draw do
+  resources :users
+
+  root :to => 'users#index'
+match '/signin' => 'users#signin'
+match '/check_signin' => 'users#check_signin'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
