@@ -1,10 +1,23 @@
 RailsBlog::Application.routes.draw do
+  get "posts/index"
+
+  get "posts/new"
+
   resources :users
 
-root :to      => 'users#index'
+root :to      => 'posts#index'
 get '/signup'   => 'users#new'
-match '/signin' => 'users#signin'
-match '/check_signin' => 'users#check_signin'
+get '/signin' => 'users#signin'
+get '/signout' => 'users#signout'
+post '/signin' => 'users#check_signin'
+
+get '/newpost' => 'posts#new'
+get '/posts' => 'posts#index'
+get '/posts/:id'=>'posts#show', :as => 'post'
+get '/posts/edit/:id' => 'posts#edit', :as => 'edit_post'
+post '/posts/edit/:id' => 'posts#update', :as => 'update_post'
+post '/posts/new' => 'posts#create'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

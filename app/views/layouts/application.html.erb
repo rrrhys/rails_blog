@@ -7,22 +7,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="navbar">
-  <div class="navbar-inner">
-    <a class="brand" href="#">Title</a>
-    <ul class="nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Link</a></li>
-      <li><a href="#">Link</a></li>
-    </ul>
+
+    
+    <%= render "layouts/nav" %>
+
+
+<div class="row">
+  <div class="span8 offset2 spancentre">
+  <% flash.each do |k, v| %>
+    <div class="alert alert-<%= k %>"><%= v%></div>
+  <% end %>
+  <%= yield %>
   </div>
+
 </div>
 
-<%= signed_in?%>
-<% flash.each do |k, v| %>
-	<div class="alert alert-<%= k %>"><%= v%></div>
-<% end %>
-<%= yield %>
 <footer>
 
 </footer>

@@ -6,6 +6,10 @@ module ApplicationHelper
 		logger.debug "Storing token #{user.remember_token}"
 		self.current_user = user
 	end
+	def sign_out
+		self.current_user = nil
+    cookies.delete(:remember_token)
+	end
 	def signed_in?
 		#return true if current user not nil
 		!current_user.nil?

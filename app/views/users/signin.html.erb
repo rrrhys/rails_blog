@@ -1,13 +1,13 @@
 <h1>Users#signin</h1>
 <p>Find me in app/views/users/signin.html.erb</p>
 
-<%= form_for :user, :url => check_signin_path  do |f| %>
+<%= form_for :user, :url => :signin  do |f| %>
 
 	<%= f.label :email %>
-	<%= f.text_field :email %>
+	<%= f.text_field :email, :class=>"span7" %>
 
 	<%= f.label :password %>
-	<%= f.password_field :password %>
+	<%= f.password_field :password, :class=>"span7" %>
 
-	<%= f.submit %>
+	<%= f.submit "Sign in", :class=>"btn btn-primary span4 center" %>
 <% end %>

@@ -28,7 +28,7 @@ class UsersController < ApplicationController
       redirect_to(@user)
     else
       flash[:notify] = "hmm"
-      redirect_to signin_path
+      redirect_to :signin
     end
   end
   def signin
@@ -36,5 +36,7 @@ class UsersController < ApplicationController
   end
 
   def signout
+    sign_out()
+    redirect_to :signin
   end
 end

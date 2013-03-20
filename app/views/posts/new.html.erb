@@ -1,0 +1,15 @@
+<h1>Posts#new</h1>
+<p>Find me in app/views/posts/new.html.erb</p>
+
+<%= form_for :post  do |f| %>
+	<%#= hidden_field_tag :user_id, @current_user.id %>
+	<%= f.label :title %>
+	<%= f.text_field :title, :class=>"span7", :id => "post_title" %>
+
+	<%= f.label :content %>
+	<%= f.text_area :content, :class=>"span7" %>
+
+	<%= f.label :urltext %>
+	/<%= :post %>/<%= f.text_field :urltext, :class=>"span7", :id=>"post_urltext" %>
+	<%= f.submit "Save Post", :class=>"btn btn-primary span4 center" %>
+<% end %>
