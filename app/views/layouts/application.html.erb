@@ -7,15 +7,24 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= debug(current_user)%>
+<div class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="#">Title</a>
+    <ul class="nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+    </ul>
+  </div>
+</div>
+
 <%= signed_in?%>
 <% flash.each do |k, v| %>
 	<div class="alert alert-<%= k %>"><%= v%></div>
 <% end %>
 <%= yield %>
 <footer>
-	<%= debug(params) if Rails.env.development? %>
-	<%= debug(cookies) if Rails.env.development? %>
+
 </footer>
 </body>
 </html>
