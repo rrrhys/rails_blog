@@ -1,0 +1,2 @@
+{"ts":1363751668242,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"<h1>Users#index</h1>\n<p>Find me in app/views/users/index.html.erb</p>test\n<%= link_to \"New\", new_user_path %>"]],"start1":0,"start2":0,"length1":0,"length2":109}]],"length":109}
+{"contributors":[],"silentsave":false,"ts":1363751679591,"patch":[[{"diffs":[[-1,"<h1>Users#index</h1>\n"],[0,"<p>F"]],"start1":0,"start2":0,"length1":25,"length2":4},{"diffs":[[0,"</p>"],[-1,"test"],[1,"\n"],[0,"\n<%="]],"start1":44,"start2":44,"length1":12,"length2":9}]],"length":85,"saved":false}

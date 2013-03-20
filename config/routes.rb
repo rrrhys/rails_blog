@@ -1,7 +1,8 @@
 RailsBlog::Application.routes.draw do
   resources :users
 
-  root :to => 'users#index'
+root :to      => 'users#index'
+get '/signup'   => 'users#new'
 match '/signin' => 'users#signin'
 match '/check_signin' => 'users#check_signin'
   # The priority is based upon order of creation:

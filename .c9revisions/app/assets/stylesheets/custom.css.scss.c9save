@@ -1,0 +1,4 @@
+{"ts":1363751721986,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"@import \"bootstrap\";"]],"start1":0,"start2":0,"length1":0,"length2":20}]],"length":20}
+{"contributors":[],"silentsave":false,"ts":1363751730912,"patch":[[{"diffs":[[0,"tstrap\";"],[1,"\n\n.footer {\n font-size: 8pt;   \n}"]],"start1":12,"start2":12,"length1":8,"length2":41}]],"length":53,"saved":false}
+{"ts":1363751814924,"patch":[[{"diffs":[[0,"8pt;"],[-1,"   "],[1,"\n background-color: #eee;\n max-height: 200px;\n overflow: scroll;"],[0,"\n}"]],"start1":44,"start2":44,"length1":9,"length2":70}]],"length":114,"saved":false}
+{"ts":1363751829367,"patch":[[{"diffs":[[0,"ee;\n"],[-1," max-height: 200px;\n overflow: scroll;\n"],[0,"}"]],"start1":70,"start2":70,"length1":44,"length2":5}]],"length":75,"saved":false}
