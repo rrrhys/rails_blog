@@ -1,0 +1,1 @@
+{"ts":1363827793009,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"<h1>Posts#show</h1>\n<p>Find me in app/views/posts/show.html.erb</p>\n\n<%= @post.title %><br>\n<%= @post.content %>\n\n<%= link_to \"Edit Post\", :edit_post %>"]],"start1":0,"start2":0,"length1":0,"length2":152}]],"length":152}
