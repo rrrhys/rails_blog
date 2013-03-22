@@ -1,8 +1,10 @@
 <h1><%= @post.title %></h1>
-<br>
+<small>Posted by <%= @post.user.name%> at <%= @post.created_at.in_time_zone("Australia/Sydney") %></small>
+<div class="post_content">
 <% 
 #TODO: Put this in a helper when I'm a bit better 
     markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML,
     :autolink => true, :space_after_headers => true)%>
 <%= markdown.render(@post.content).html_safe %>  
 <%= link_to "Edit Post", :edit_post %>
+</div>

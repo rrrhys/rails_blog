@@ -1,5 +1,21 @@
 @import "bootstrap";
+$paleWhite: #fefefe;
+@mixin box-shadow {
+   -webkit-box-shadow: 5px 5px 13px rgba(50, 50, 50, 0.26);
+    -moz-box-shadow:    5px 5px 13px rgba(50, 50, 50, 0.26);
+    box-shadow:         5px 5px 13px rgba(50, 50, 50, 0.26);
+}
 
+/*Posts index */
+.speech_bubble {
+  margin-bottom: 40px;
+}
+/*View Post */
+.post_content {
+  margin-top: 40px;
+}
+
+/* General */
 footer {
  font-size: 8pt;
  background-color: #eee;

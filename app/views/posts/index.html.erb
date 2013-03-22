@@ -2,8 +2,10 @@
 
 <% if @posts.count > 0 %>
     <% @posts.each do |p| %>
-    
+    <div class="speech_bubble">
     <h4><%= link_to  p.title, p %></h4>
+    <small>Posted by <%= p.user.name%> at <%= p.created_at.in_time_zone("Australia/Sydney") %></small>
+    </div>
     <% end %>
 <% else %>
 <h4>There are no posts yet!</h4>
