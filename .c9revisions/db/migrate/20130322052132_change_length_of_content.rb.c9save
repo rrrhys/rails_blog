@@ -1,0 +1,4 @@
+{"ts":1363929859031,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"class ChangeLengthOfContent < ActiveRecord::Migration\n  def up\n  end\n\n  def down\n  end\nend\n"]],"start1":0,"start2":0,"length1":0,"length2":91}]],"length":91}
+{"contributors":[],"silentsave":false,"ts":1363929940620,"patch":[[{"diffs":[[0,"on\n "],[-1," def up\n  end\n\n  def down\n  end"],[1,"change_column :comments, :body, :text, :limit => nil"],[0,"\nend"]],"start1":51,"start2":51,"length1":39,"length2":60}]],"length":112,"saved":false}
+{"ts":1363929955804,"patch":[[{"diffs":[[0,"mn :"],[-1,"comments, :body"],[1,"post, :content"],[0,", :t"]],"start1":66,"start2":66,"length1":23,"length2":22}]],"length":111,"saved":false}
+{"ts":1363929963726,"patch":[[{"diffs":[[0,"mn :post"],[1,"s"],[0,", :conte"]],"start1":66,"start2":66,"length1":16,"length2":17}]],"length":112,"saved":false}
