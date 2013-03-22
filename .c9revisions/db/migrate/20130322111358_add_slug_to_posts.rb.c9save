@@ -1,0 +1,2 @@
+{"ts":1363950858258,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"class AddSlugToPosts < ActiveRecord::Migration\n  def change\n    add_column :posts, :posts, :string\n    add_column :posts, :slug, :text\n  end\nend\n"]],"start1":0,"start2":0,"length1":0,"length2":145}]],"length":145}
+{"contributors":[],"silentsave":false,"ts":1363950871161,"patch":[[{"diffs":[[0,"nge\n"],[-1,"    add_column :posts, :posts, :string\n"],[0,"    "]],"start1":56,"start2":56,"length1":47,"length2":8}]],"length":106,"saved":false}
