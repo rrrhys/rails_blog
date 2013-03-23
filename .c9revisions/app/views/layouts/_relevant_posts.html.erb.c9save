@@ -1,0 +1,2 @@
+{"ts":1364030204465,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1364030209792,"patch":[[{"diffs":[[1,"    <% @posts.each do |p| %>\n    <div class=\"speech_bubble\">\n    <h4><%= link_to  p.title, p %></h4>\n    <small>Posted by <%= p.user.name%> at <%= p.created_at.in_time_zone(\"Australia/Sydney\") %></small>\n    </div>\n    <% end %>"]],"start1":0,"start2":0,"length1":0,"length2":228}]],"length":228,"saved":false}

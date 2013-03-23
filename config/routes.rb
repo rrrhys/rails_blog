@@ -5,7 +5,7 @@ RailsBlog::Application.routes.draw do
 
   resources :users
 
-root :to      => 'posts#index'
+root :to      => 'welcome#index'
 get '/signup'   => 'users#new'
 get '/signin' => 'users#signin'
 get '/signout' => 'users#signout'

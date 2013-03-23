@@ -1,5 +1,11 @@
 class UsersController < ApplicationController
   def new
+    @users = User.all
+    if @users.length > 0
+      #for personal blog disable signup
+      flash[:error] = "Only 1 user allowed currently."
+      redirect_to :root
+    end
     @user = User.new
   end
 

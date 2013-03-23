@@ -1,0 +1,4 @@
+{"ts":1364034041152,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"<h1>Welcome#index</h1>\n<p>Find me in app/views/welcome/index.html.erb</p>\n"]],"start1":0,"start2":0,"length1":0,"length2":74}]],"length":74}
+{"contributors":[],"silentsave":false,"ts":1364034055427,"patch":[[{"diffs":[[0,"erb</p>\n"],[1,"<% if @posts.count > 0 %>\n  <%= render \"layouts/relevant_posts\" %>\n<% else %>"]],"start1":66,"start2":66,"length1":8,"length2":85}]],"length":151,"saved":false}
+{"ts":1364034079773,"patch":[[{"diffs":[[0,"<% e"],[-1,"lse"],[1,"nd"],[0," %>"]],"start1":141,"start2":141,"length1":10,"length2":9}]],"length":150,"saved":false}
+{"ts":1364034096518,"patch":[[{"diffs":[[-1,"<h1>Welcome#index</h1>\n<p>Find me in app/views/welcome/index.html.erb</p>"],[0,"\n<% "]],"start1":0,"start2":0,"length1":77,"length2":4}]],"length":77,"saved":false}

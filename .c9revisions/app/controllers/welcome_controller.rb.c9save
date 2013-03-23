@@ -1,0 +1,2 @@
+{"ts":1364034027035,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"class WelcomeController < ApplicationController\n  def index\n  end\nend\n"]],"start1":0,"start2":0,"length1":0,"length2":70}]],"length":70}
+{"contributors":[],"silentsave":false,"ts":1364034035431,"patch":[[{"diffs":[[0,"f index\n"],[1,"    @posts = Post.all\n"],[0,"  end\nen"]],"start1":52,"start2":52,"length1":16,"length2":38}]],"length":92,"saved":false}
