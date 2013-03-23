@@ -8,7 +8,13 @@ class PostsController < ApplicationController
   	@post = Post.find(params[:id])
     
   end
-
+  def more_except
+    current_id = params[:id].to_i
+    if current_id
+      @posts = Post.find(:all, :conditions => ["id != ?", current_id])
+      render :partial => 'layouts/relevant_posts'
+    end
+  end
   def new
   	auth_check
 

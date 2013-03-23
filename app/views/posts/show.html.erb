@@ -8,3 +8,8 @@
 <%= markdown.render(@post.content).html_safe %>  
 <%= link_to "Edit Post", :edit_post %>
 </div>
+<input type="hidden" name="post_id" id="post_id" value="<%= @post.id%>">
+<h3>More Posts</h3>
+<div class="more_posts">
+
+</div>

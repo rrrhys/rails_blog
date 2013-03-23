@@ -4,7 +4,7 @@ RailsBlog::Application.routes.draw do
   get "posts/new"
 
   resources :users
-
+get '/users/:id/posts'  =>  'users#posts'
 root :to      => 'welcome#index'
 get '/signup'   => 'users#new'
 get '/signin' => 'users#signin'
@@ -16,6 +16,7 @@ get '/posts' => 'posts#index'
 get '/posts/:id'=>'posts#show', :as => 'post'
 get '/posts/edit/:id' => 'posts#edit', :as => 'edit_post'
 post '/posts/edit/:id' => 'posts#update', :as => 'update_post'
+get '/posts/more_except/:id'=>'posts#more_except'
 post '/posts/new' => 'posts#create'
 
   # The priority is based upon order of creation:

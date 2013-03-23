@@ -1,6 +1,6 @@
     <% @posts.each do |p| %>
     <div class="speech_bubble">
     <h4><%= link_to  p.title, p %></h4>
-    <small>Posted by <%= p.user.name%> at <%= p.created_at.in_time_zone("Australia/Sydney") %></small>
+    <small>Posted by <%= link_to p.user.name, p.user %> at <%= p.created_at.in_time_zone("Australia/Sydney") %></small>
     </div>
     <% end %>

@@ -8,7 +8,5 @@ class ApplicationController < ActionController::Base
   		redirect_to :root
   	end
   end
-  def index
-    @posts = Post.all
-  end
+
 end

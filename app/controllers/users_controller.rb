@@ -45,4 +45,9 @@ class UsersController < ApplicationController
     sign_out()
     redirect_to :signin
   end
+  def posts
+  @user_id = params[:id].to_i
+    @posts = Post.find(:all, :conditions => {:user_id => @user_id})
+    render :partial => "layouts/relevant_posts"
+  end
 end

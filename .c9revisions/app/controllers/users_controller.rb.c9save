@@ -4,3 +4,4 @@
 {"ts":1364034271867,"patch":[[{"diffs":[[0,"unt = 1\n"],[1,"      #for personal blog disable signup\n"],[0,"      fl"]],"start1":94,"start2":94,"length1":16,"length2":56}]],"length":923,"saved":false}
 {"ts":1364034359414,"patch":[[{"diffs":[[0,"ers."],[-1,"count"],[1,"size"],[0," = 1"]],"start1":88,"start2":88,"length1":13,"length2":12}]],"length":922,"saved":false}
 {"ts":1364034399599,"patch":[[{"diffs":[[0,"ers."],[-1,"size = 1"],[1,"length > 0"],[0,"\n   "]],"start1":88,"start2":88,"length1":16,"length2":18}]],"length":924,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1364036710838,"patch":[[{"diffs":[[0,"n\n  end\n"],[1,"  def posts\n  @user_id = params[:id].to_i\n    @posts = Post.find(:all, :conditions => {:user_id => @user_id})\n    render :partial => \"layouts/relevant_posts\"\n  end\n"],[0,"end\n"]],"start1":912,"start2":912,"length1":12,"length2":176}]],"length":1088,"saved":false}

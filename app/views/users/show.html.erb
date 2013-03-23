@@ -1,3 +1,7 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<h1>User : <%= @user.name %></h1>
+<p>Email: <%= @user.email.gsub("@"," at ") %></p>
+<h3>Posts by <%= @user.name %></h3>
+<input type="hidden" name="user_id" id="user_id" value="<%=@user.id%>">
+<div class="user_posts">
 
+</div>
