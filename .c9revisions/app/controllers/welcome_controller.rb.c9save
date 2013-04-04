@@ -1,2 +1,5 @@
 {"ts":1364034027035,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"class WelcomeController < ApplicationController\n  def index\n  end\nend\n"]],"start1":0,"start2":0,"length1":0,"length2":70}]],"length":70}
 {"contributors":[],"silentsave":false,"ts":1364034035431,"patch":[[{"diffs":[[0,"f index\n"],[1,"    @posts = Post.all\n"],[0,"  end\nen"]],"start1":52,"start2":52,"length1":16,"length2":38}]],"length":92,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1365054672023,"patch":[[{"diffs":[[0,"troller\n"],[1,"layout \"tips\"\n"],[0,"  def in"]],"start1":40,"start2":40,"length1":16,"length2":30}]],"length":106,"saved":false}
+{"ts":1365054830995,"patch":[[{"diffs":[[0,"t \"t"],[-1,"ips"],[1,"fullwidth"],[0,"\"\n  "]],"start1":53,"start2":53,"length1":11,"length2":17}]],"length":112,"saved":false}
+{"ts":1365054832713,"patch":[[{"diffs":[[0,"layout \""],[-1,"t"],[0,"fullwidt"]],"start1":48,"start2":48,"length1":17,"length2":16}]],"length":111,"saved":false}
